@@ -1,0 +1,77 @@
+/* spjallbox */
+#check {
+    display: none;
+}
+.chatbox label {
+    display: block;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--chatbox-a);
+    border: 1px solid var(--chatbox-b);
+    border-radius: .4rem;
+    cursor: pointer;
+    z-index: 9;
+    text-align: center;
+    padding-top: .5rem;
+}
+.chatbox label:hover,
+.chatbox label:focus {
+    background-color: var(--chatbox-b);
+}
+.chat-content {
+    position: fixed;
+    right: -22rem;
+    bottom: 4rem;
+    width: 20rem;
+    height: 26rem;
+    border: 1px solid var(#ccc);
+    padding: 1rem;
+    background-color: var(--chatbox-a);
+    border-radius: .4rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 12;
+}
+#check:checked ~ .chat-content {
+    right: 1rem;
+    transition: right 0.3s ease-in-out;
+}
+:where(table) {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-indent: 0;
+}
+input {
+    font-family: fredoka;
+}
+input, select, textarea {
+    border: 0.0625em solid var(--chatbox-c);
+    border-radius: 0.25em;
+    outline: none;
+    background-color: var(--chatbox-d);
+}
+input::placeholder {
+    color: var(--chatbox-f);
+}
+textarea::placeholder {
+    color: var(--chatbox-f);
+}
+textarea {
+    display: block;
+    resize: vertical;
+    font-family: fredoka;
+}
+button {
+    margin: 0;
+    overflow: visible;
+    font-family: fredoka;
+    text-transform: none;
+    border: 0.0625em solid var(--chatbox-e);
+    border-radius: 0.25em;
+    border-width: 0.0625em;
+    background-color: var(--chatbox-e);
+    padding: 1em 1em;
+}

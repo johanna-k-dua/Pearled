@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perlað</title>
+    <link rel="icon" type="image/svg" href="SVG/Logo.svg">
+    <link rel="stylesheet" href="CSS/styles.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav pink">
+        <div class="shh">
+            <h2><a href="Home.html"><span class="icon-Logo"></span> Perlað</a></h2>
+        </div>
+        <section class="menubar">
+        <!-- Hamburger Menu (for mobile) -->
+        <input type="checkbox" id="inputMenu">
+        <label for="inputMenu" class="labelMenu">☰</label>
+        <!-- Top Menu Links -->
+        <!-- Navbar -->
+        <div class="topmenu">
+            <section class="links">
+                <a href="Home.html">Forsíða</a>
+                <a href="Perlur.html">Perlur</a>
+                <a href="Price.html">Verðlisti</a>
+                <a href="Shop.html">Vörukaup</a>
+                <section class="socialbutts">
+                    <a href="#"><span class="icon-facebook2"></span> </a>
+                    <a href="#"> <span class="icon-instagram"></span> </a>
+                    <a href="#"> <span class="icon-twitter"></span> </a>
+                    <a href="#"> <span class="icon-mail"></span></a>
+                </section>
+            </section>
+        </div>
+        </section>
+    </div>
+    <img src="SVG/Logo.svg" class="Logo animate__tada" alt="logo">
+    <picture>
+            <source media="(min-width:80rem)" srcset="Myndir/Header.jpg">
+            <source media="(min-width:60rem)" srcset="Myndir/Header.jpg">
+            <source media="(min-width:48rem)" srcset="Myndir/Header.jpg">
+            <source media="(min-width:37.5rem)" srcset="Myndir/Header.jpg">
+            <source media="(min-width:20rem)" srcset="Myndir/Header.jpg">
+            <img src="Myndir/Header.jpg" alt="Header" style="width: 100%;">
+    </picture>
+    <main class="container">
+        <section class="col-2">
+            <article>
+                <h4>Um fyrirtækið</h4>
+                <p>Perlað er lítið fyrirtæki sem að var stofnað sumarið 2025 og selur perlað skart.</p>
+            </article>
+            <article>
+                <h4>Um vörurnar</h4>
+                <p>Allar vörurnar hjá Perlað eru vandlega handgerðar af okkur og sérhannaðar af þér.</p>
+                <p>Hjá Perlað hefur viðskiptavinurinn nær fulla stjórn yfir útliti varanna, frá liti perlanna til mynstursins sem að þær eru settar í, hvort að það sé texti eða ekki, og hvaða liti er á textanum; og þess vegna er hver vara einstök.</p>
+            </article>
+        </section>
+        <section class="col-5">
+            <img src="Myndir/mitti1.jpg" alt="Mittisskraut einfalt" style="width: 100%;">
+            <img src="Myndir/hringur.jpg" alt="Hringur með skrauti" style="width: 100%;">
+            <img src="Myndir/keychain.jpg" alt="Lyklakippa með lobster claw festingu" style="width: 100%;">
+            <img src="Myndir/armband.jpg" alt="Armband með texta" style="width: 100%;">
+            <img src="Myndir/mitti2.jpg" alt="Mittisskraut tvöfalt" style="width: 100%;">
+        </section>
+    </main>
+    <footer class="shh">
+        <a href="Shop.html"><h5><(￣︶￣)↗[KAUPA!]</h5></a>
+    </footer>
+    <!--spjallbox-->
+    <section class="chatbox">
+        <input type="checkbox" id="check">
+        <label for="check"><span class="icon-bubbles2"></span></label>
+        <div class="chat-content">
+            <p>Hvernig get ég aðstoðað þig?</p>
+            <form action="#" method="get">
+                <textarea placeholder="Skrifaðu skilaboð..." rows="5"></textarea>
+                <div><input type="text" name="name" required placeholder="Nafn"></div>
+                <div><input type="email" name="email" required placeholder="Tölvupóstfang"></div>
+                <button type="submit">Senda skilaboð</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

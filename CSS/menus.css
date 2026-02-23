@@ -1,0 +1,85 @@
+.topnav {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* border: 1px solid;
+    border-radius: 4px; */
+    /*margin-top: 1rem;
+    padding: 0 1rem;*/
+}
+.topnav div:first-child {
+    /*padding-top: 0.5rem;*/
+    text-align: center;
+}
+/* Fellilisti */
+#inputMenu {
+    display: none;
+}
+.topnav label {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    border: solid var(--chatbox-b);
+    border-radius: 3px;
+    padding: 0 6px;
+    background-color: var(--chatbox-a);
+    z-index: 99;
+}
+#inputMenu:checked ~ label {
+    background-color: var(--chatbox-b);
+    color: var(--chatbox-a);
+}
+.topmenu {
+    position: fixed;
+    top: 3.5rem;
+    right: -40rem;
+    width: 92%;
+    border: 1px solid var(--chatbox-b);
+    border-radius: 4px;
+    background-color: var(--chatbox-a);
+    z-index: 9;
+    transition: right .5s ease-out;
+}
+.topnav #inputMenu:checked ~ .topmenu {
+    right: 1rem;
+    transition: right 0.5s ease-out;
+}
+.topmenu a {
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--chatbox-b);
+    text-decoration: none;
+}
+/* tákn í einni línu */
+.socialbutts {
+    display: flex;
+    flex-flow: row;
+    margin: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem;
+}
+.socialbutts a {
+    display: inline-block;
+    text-decoration: none;
+    border: 0;
+    padding: 0 4px;
+}
+/* Viðmið farsíma lárétt */
+@media screen and (max-width: 950px) {
+    .topmenu {
+        position: fixed;
+        top: 3.5rem;
+        right: -90rem;
+    }
+}
+
+/* Viðmið @media ipad lárétt */
+@media screen and (min-width: 960px) {
+    .topmenu {
+        position: fixed;
+        top: 3.5rem;
+        right: -150rem;
+    }
+}

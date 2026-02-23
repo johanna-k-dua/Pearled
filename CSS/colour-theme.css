@@ -1,0 +1,168 @@
+[data-theme=light],
+:root:not([data-theme=dark]),
+:host(:not([data-theme=dark])) {
+    color-scheme: light;
+    background-color: #FEFEFA;
+    color: #070545;
+    /* chatbox */
+    --chatbox-a: #cdcdb6;
+    --chatbox-b: #e5e4e2;
+    --chatbox-c: #ebebcf;
+    --chatbox-d: #fafaea;
+    --chatbox-e: #f0f0c7;
+    --chatbox-f: #070545;
+    /* table */
+    --table-a: #fefefa;
+    --table-b: #f0efb9;
+    --table-c: #fffdd0;
+    --table-d: #ffed9c;
+    /* form */
+    --form-back: #07054574;
+    .pink {
+        background-color: #ffe4e1;
+    }
+    .yellow {
+        background-color: #fffdd0;
+    }
+    .green {
+        background-color: #e9ffdb;
+    }
+    .blue {
+        background-color: #f0f8ff;
+    }
+    .purple {
+        background-color: #fae6fa;
+    }
+    article {
+        background-color: #fafaea;
+        margin-bottom: 1em;
+        padding: 1em 1em;
+        border-radius: 0.25em;
+    }
+    .container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    a {
+        color: #2633c9;
+    }
+    .shh, .overview {
+        a {
+            color: #070545;
+        }
+    }
+    *, *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+}
+@media only screen and (prefers-color-scheme: dark) {
+    :root:not([data-theme]),
+    :host(:not([data-theme])) {
+        color-scheme: dark;
+        background-color: #070545;
+        color: #FEFEFA;
+        .pink {
+            background-color: #d64271;
+        }
+        .yellow {
+            background-color: #ecac2c;
+        }
+        .green {
+            background-color: #5bdb37;
+        }
+        .blue {
+            background-color: #2f82d5;
+        }
+        .purple {
+            background-color: #c722c7;
+        }
+        article {
+            background-color: #09065e;
+        }
+        a {
+            color: #f5fda7;
+        }
+        /* chatbox */
+        --chatbox-a: #06248f;
+        --chatbox-b: #2152b5;
+        --chatbox-c: #5b64e4;
+        --chatbox-d: #3460b9;
+        --chatbox-e: #2515d3;
+        --chatbox-f: #fefefa;
+        /* table */
+        --table-a: #070545;
+        --table-b: #010021;
+        --table-c: #020120;
+        --table-d: #0e2bad;
+        /* form */
+        --form-back: #fefefa74;
+        .shh, .overview {
+            a {
+                color: #FEFEFA;
+            }
+        }
+    }
+}
+
+/* texti/letur */
+h1 {
+    font-family: fredoka;
+}
+h2 {
+    font-family: fredoka;
+}
+h3 {
+    font-family: fredoka;
+}
+h4 {
+    font-family: fredoka;
+}
+h5 {
+    font-family: fredoka;
+}
+h6 {
+    font-family: fredoka;
+}
+p {
+    font-family: fredoka;
+    text-align: justify;
+}
+a {
+    font-family: fredoka;
+}
+li {
+    font-family: fredoka;
+}
+form {
+    font-family: fredoka;
+}
+option {
+    font-family: fredoka;
+}
+select {
+    font-family: fredoka;
+}
+
+input:not([type=checkbox], [type=radio]), select, textarea {
+    margin-bottom: 1em;
+}
+input:not([type=checkbox], [type=radio], [type=range], [type=file]), select, textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0.75em 1em;
+}
+input:not([type=checkbox], [type=radio]), button[type=submit], select, textarea {
+    width: 100%;
+}
+input:not([type=checkbox], [type=radio], [type=range]) {
+    height: calc(1em * 1.5em + 0.75em * 2 + 0.0625em * 2);
+}
+input:not([type=submit], [type=button], [type=reset], [type=checkbox], [type=radio], [type=file]), :where(select, textarea) {
+    outline-width: 0.0625rem;
+}
+[type=submit], [type=reset], [type=button] {
+    margin-bottom: 1em;
+}

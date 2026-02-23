@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perlað</title>
+    <link rel="icon" type="image/svg" href="SVG/Logo.svg">
+    <link rel="stylesheet" href="CSS/styles.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav blue">
+        <div class="shh">
+            <h2><a href="Home.html"><span class="icon-Logo"></span> Perlað</a></h2>
+        </div>
+        <section class="menubar">
+        <!-- Hamburger Menu (for mobile) -->
+        <input type="checkbox" id="inputMenu">
+        <label for="inputMenu" class="labelMenu">☰</label>
+        <!-- Top Menu Links -->
+        <!-- Navbar -->
+        <div class="topmenu">
+            <section class="links">
+                <a href="Home.html">Forsíða</a>
+                <a href="Perlur.html">Perlur</a>
+                <a href="Price.html">Verðlisti</a>
+                <a href="Shop.html">Vörukaup</a>
+                <section class="socialbutts">
+                    <a href="#"><span class="icon-facebook2"></span> </a>
+                    <a href="#"> <span class="icon-instagram"></span> </a>
+                    <a href="#"> <span class="icon-twitter"></span> </a>
+                    <a href="#"> <span class="icon-mail"></span></a>
+                </section>
+            </section>
+        </div>
+        </section>
+    </div>
+    <main class="container">
+        <h1 class="perlur">Vörukaup</h1>
+        <article>
+            <h3>Hvernig kaup fara fram:</h3>
+            <p>Þú byrjar á því að velja hvernig vöru þú vilt, síðan velurðu hvaða liti af perlum þú vilt hafa í vörunni, næst skrifar þú—í cm—hversu löng varan þarf að vera (t.d. ummál úlnliðs fyrir armband), svo skrifarðu textann sem að þú vilt hafa—ef að þú vilt hafa texta—og þar af leiðandi vellur þú hvaða lit af textaperlu þú vilt, og að lokum skaltu setja inn fullt nafn og tölvupóst og ýta á staðfesta pöntun.</p>
+            <p>Þegar að búið er að staðfesta pöntunina sendist beiðnin til okkar.</p>
+            <p>Þegar að við höfum móttekið beiðnina munum við hafa samband við þig í gegnum tölvupóst til þess að ganga frá smáatriðunum—mynstur, texti, greiðsla, o.s.frv.</p>
+        </article>
+        <section>
+            <button
+                style="width: 100%;"
+                data-target="modal-example"
+                onclick="toggleModal(event)"
+                class="primary">Kaup
+            </button>
+        </section>
+    </main>
+    <footer class="shh">
+        <a href="Price.html"><h5><(￣︶￣)↗[SKOÐA VERÐ!]</h5></a>
+    </footer>
+    <!--spjallbox-->
+    <section class="chatbox">
+        <input type="checkbox" id="check">
+        <label for="check"><span class="icon-bubbles2"></span></label>
+        <div class="chat-content">
+            <p>Hvernig get ég aðstoðað þig?</p>
+            <form action="#" method="get">
+                <textarea placeholder="Skrifaðu skilaboð..." rows="5"></textarea>
+                <div><input type="text" name="name" required placeholder="Nafn"></div>
+                <div><input type="email" name="email" required placeholder="Tölvupóstfang"></div>
+                <button type="submit">Senda skilaboð</button>
+            </form>
+        </div>
+    </section>
+    <dialog id="modal-example">
+        <!--Verkefni 2. sprettigluggi-->
+        <article>
+            <header>
+                <button
+                aria-label="Close"
+                rel="prev"
+                data-target="modal-example"
+                onclick="toggleModal (event)">
+                </button>
+            </header>
+        <form action="Thanks.html" method="get">
+                <div>
+                    <fieldset class="buy">
+                        <legend>Kaup</legend>
+                        <section>
+                            <p>Vöruval:
+                                <select name="product" id="">
+                                    <option value="base">Ekkert valið</option>
+                                    <option value="Mittisskraut1">Mittisskraut - einfalt</option>
+                                    <option value="Mittisskraut2">Mittisskraut - tvöfalt</option>
+                                    <option value="Armband1">Armband - plain</option>
+                                    <option value="Armband2">Armband - með texta</option>
+                                    <option value="Hringur1">Hringur - plain</option>
+                                    <option value="Hringur2">Hringur - með skrauti</option>
+                                    <option value="Lyklakippa1">Lyklakippa - lobster claw</option>
+                                    <option value="Lyklakippa2">Lyklakippa - keyring</option>
+                                </select>
+                            </p>
+                        </section>
+                        <section class="col-2">
+                            <fieldset>
+                                <legend>Perlur</legend>
+                                <div style="width: 100%; height: 250px; overflow: auto;">
+                                    <p class="grid">
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr1"> Rauður - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr2"> Metallic rauður - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr3"> Gagnsær rauður - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr4"> Gagnsær appelsínugulur - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr5"> Brons - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr6"> Gull - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr7"> Gulur - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr8"> Ljósgulur - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr9"> Gagnsær grænn - 4mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr10"> Glansandi grænn - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr11"> Gagnsær dökkgrænn - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr12"> Metallic dökkgrænnn - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr13"> Mintu grænn - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr14"> Glitrandi dökkgrænn - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr15"> Ljósblár - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr16"> Dökkblár - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr17"> Metallic dökkblár - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr18"> Silfurhúðaður gagnsær blár - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr19"> Silfurhúðaður gagnsær fjólublár - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr20"> Gagnsær fjólublár - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr21"> Glitrandi fjólublár - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr22"> Gagnsær glitrandi fjólublár - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr23"> Glansandi ljósbleikur - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr24"> Húðaður ljósbleikur - 4mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr25"> Húðaður ljósbleikur - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr26"> Húðaður dökkbleikur - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr27"> Matte metallic bleikur - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr28"> Metallic bleikur - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr29"> Blátónaður gagnsær - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr30"> Glær - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr31"> Beige - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr32"> Beige með bleikum blæ - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr33"> Postulín - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr34"> Hvítur - 4mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr35"> Hvítur - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr36"> Glansandi hvítur - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr37"> Glansandi rjómi - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr38"> Silfur - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr39"> Svartur - 4mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr40"> Svartur - 2mm
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="valkostur" value="nr41"> Matte dökkgrár - 2mm
+                                        </label>
+                                    </p>
+                                </div>
+                            </fieldset>
+                            <section>
+                                <label>
+                                Lengd í cm *
+                                <input
+                                    type="number"
+                                    name="length"
+                                    placeholder="Lengd"
+                                    required
+                                />
+                                </label>
+                                <label>
+                                Texti (valfrjáls)
+                                <input
+                                    type="text"
+                                    name="text"
+                                    placeholder="Texti"
+                                />
+                                </label>
+                                <fieldset>
+                                    <legend>Litur á texta</legend>
+                                    <div style="width: 100%; height: 110px; overflow: auto;">
+                                        <p class="grid">
+                                            <label>
+                                                <input type="checkbox" name="letur" value="nr1"> Svartur
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="letur" value="nr2"> Hvítur
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="letur" value="nr3"> Silfur
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="letur" value="nr4"> Rauður
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="letur" value="nr5"> Appelsínugulur
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="letur" value="nr6"> Gulur
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="letur" value="nr7"> Grænn
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="letur" value="nr8"> Blár
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="letur" value="nr9"> Fjólublár
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="letur" value="nr10"> Ljósbleikur
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="letur" value="nr11"> Dökkbleikur
+                                            </label>
+                                        </p>
+                                    </div>
+                                </fieldset>
+                            </section>
+                        </section>
+                        <section>
+                            <label>
+                                Nafn:
+                                <input
+                                    type="text"
+                                    name="full_name"
+                                    placeholder="Fullt nafn"
+                                    autocomplete="given-name"
+                                    required
+                                />
+                                </label>
+                                <label>
+                                Tölvupóstur:
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email"
+                                    autocomplete="email"
+                                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                                    required
+                                    title="Vinsamlegast athugið skráninguna hér"
+                                />
+                                </label>
+                        </section>
+                    <input
+                        type="submit"
+                        value="Staðfesta pöntun"
+                        class="animate__shakeX"
+                    />
+                    </fieldset>
+                </label>
+            </div>
+        </form>
+        </article>
+    </dialog>
+    <!-- JavaScript Files -->
+    <script src="js/modal.js"></script>
+</body>
+</html>
